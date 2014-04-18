@@ -11,7 +11,7 @@ if __name__ == "__main__":
     api = tweepy.API(auth)
 
 
-    tweets = api.search(q='#ucgrad14')
+    tweets = api.search(q='#UCgrad14',result_type='mixed')
     for tweet in tweets:
         try:
             if not ('RT @' in tweet.text):
